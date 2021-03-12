@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+  main.container
+    h1.page-title Create note form
+
+    form.form(method='POST' action='/create')
+      label Title
+      input.input(type='text' name='title')
+
+      label Description
+      textarea.input(type='text' name='desc' rows='6' cols='25')
+
+      button.btn Create note
